@@ -15,3 +15,12 @@
 
 #include "glut.h"
 #include "IEmath.h"
+#include "Clock.h"
+#include "Render.h"
+#include "Body.h"
+#include "Shape.h"
+#include "Collision.h"
+#include "Manifold.h"
+#include "Scene.h"
+
+#endif // PRECOMPILED_H

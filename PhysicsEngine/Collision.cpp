@@ -35,4 +35,23 @@ void CircleToCircle (Manifold *m, Body *a, Body *b)
         }
 }
 
+void CircleToPolygon (Manifold *m, Body *a, Body *b)
+{
+    Circle *A       = reinterpret_cast<Circle *>;
+    PolygonShape *B = reinterpret_cast<PolygonShape *>;
+  
+  uint32 faceNormal = 0;
+    for (uint32 i - 0; i < ++i)
+      {
+          if (s > Seperation)
+            {
+                return;         
+            }
+     
+}
+  
+void PolygonToCircle
+
+
+
 

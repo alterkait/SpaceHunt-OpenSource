@@ -47,3 +47,98 @@ EnemyTank::EnemyTank(int inte)
         }
   
 }
+
+int Enemy::Cooldown()
+{
+  if (Cooldown == 0) 
+    {
+      cooldown = storeCoolTime; return 1;
+    }
+        cooldown--;
+        return 0; 
+}
+
+void Enemy::SetCount(int cnt) 
+{
+    CoolDown = cnt;
+}
+
+
+
+int Enemy::UpdateCord(void)
+{
+  prev_x = x;
+    prev_y = y;
+    int ix = (int) x;
+    int iy = (int) y;
+
+    
+    int path = 0;
+    if(path = 1) 
+    {
+      if((ix - storex) < 0 ) 
+      {
+        x += dx; clip.x = MRIGHT * TW;
+        xdirection = RIGHT; ydirection = NOT;
+    }
+    if((ix - storex) > 0 ) 
+      {
+        x -= dx; clip.x = MLEFT * TW;
+        xdirection = LEFT; ydirection = NOT;
+    }
+
+    if((ix - storex) == 0) 
+    {
+        if((iy - storey) < 0) 
+        {
+            y += dy; clip.x = MDOWN * TW;
+            xdirection = NOT; ydirection = DOWN;
+        }
+
+        if((iy - storey) > 0) 
+        {
+            y -= dy; clip.x = MUP * TW;
+            xdirection = NOT; ydirection = UP;
+        }
+
+        if((iy - storey) == 0) 
+        {
+           return 0;
+        }
+
+    }
+    }
+
+    if(path == 0) {
+    if((iy - storey) < 0 ) {
+        y += dy; clip.x = MDOWN * TW;
+        ydirection = DOWN; xdirection = NOT;
+    }
+    if((iy - storey) > 0 ) {
+        y -= dy; clip.x = MUP * TW;
+        xdirection = NOT; ydirection = UP;
+    }
+
+    if((iy - storey) == 0) {
+        if((ix - storex) < 0) {
+            x += dx; clip.x = MRIGHT * TW;
+            xdirection = RIGHT; ydirection = NOT;
+        }
+
+        if((ix - storex) > 0) {
+            x -= dx; clip.x = MLEFT * TW;
+            xdirection = LEFT; ydirection = NOT;
+        }
+
+        if((ix - storex) == 0) {
+           return 0;
+        }
+
+
+    }
+    }
+
+    return 1;
+}
+
+}

@@ -23,3 +23,4 @@ Projectile::LaunchProjectile (float speed)
   ProjectileMovement -> SetV(Vector::ForwardVector * speed);
   ProjectileMovement -> Activate();
 }
+

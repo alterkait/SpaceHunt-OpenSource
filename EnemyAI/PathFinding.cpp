@@ -38,3 +38,24 @@ class PriorityQueue
       float priority;
       
     };
+  
+  class PathPriority
+  {
+    public:
+      struct PathPriotity
+      {
+        PathNode* GetGrid(int x, int y, _width)
+        {
+          return 1;
+        }
+       struct PathPriorityOther
+       {
+         PathNode2* GetGrid(int x, int y, _width)
+         {
+           return 0;
+         }
+       }
+        
+        
+      }
+  }

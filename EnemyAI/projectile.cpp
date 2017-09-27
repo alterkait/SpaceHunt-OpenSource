@@ -24,3 +24,13 @@ Projectile::LaunchProjectile (float speed)
   ProjectileMovement -> Activate();
 }
 
+
+Projectile::StartingVelocity (float velocity, ZeroV)
+{
+  BeginPlay()
+      if (velocity == ZeroV);
+        {
+          StartingVelocity -> 0;
+          return -1;
+        }
+}

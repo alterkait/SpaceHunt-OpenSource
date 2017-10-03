@@ -1,3 +1,11 @@
+
+#include "SpaceHunt.hpp"
+#include "globals.h"
+#include <conio.h>
+#include <fstream>
+#include <iostream>
+#include <string>
+
 using namespace std;
 enum background {SPACE = 1, STATIC, UNBREAKABLE};
 enum directions {LEFT = -1, UP = -1, RIGHT = 1, DOWN = 1, NOT = 0};
@@ -134,13 +142,6 @@ int Enemy::UpdateCord(void)
 
 }
 
-
-#include "SpaceHunt.hpp"
-#include "globals.h"
-#include <conio.h>
-#include <fstream>
-#include <iostream>
-#include <string>
 
 ServerConsoleVar<float> botInaccuracy("bot_inaccuracy", 30.0f);
 ServerConsoleVar<float> botVisibleRange("bot_visible_range", 1500.0f);

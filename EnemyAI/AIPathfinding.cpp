@@ -7,10 +7,6 @@ AIPathfinding::~AIPathfinding()
 {}
 
 //finds the shortest path to a destination waypoint
-//...once we arrive at the destination, we can follow the chain of nodes
-//...back to the source.  We fill the traversal stack with these nodes,
-//...starting from the destination and ending with the source, and we pop
-//...nodes from the stack as we arrive at each waypoint
 void AIPathfinding::constructShortestPathTo(
 	WaypointMarker *source,
 	WaypointMarker *destination)

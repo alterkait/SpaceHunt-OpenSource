@@ -67,22 +67,6 @@ bool AIPathfinding::doesPathExistTo(WaypointMarker *destination)
     return false;
 }
 
-//void AIPathfinding::printTraversalSequence()
-//{
-//	std::string currentWaypointString = "";
-//
-//	TraversalSequence::iterator ii;
-//	for (ii = traversalSequence.begin(); ii != traversalSequence.end(); ++ii)
-//	{
-//		float x = (*ii)->getPosition().getX();
-//		float y = (*ii)->getPosition().getY();
-//		currentWaypointString += retprintf("(%f %f)", x, y);
-//	}
-//
-//	printfToClient(-1, currentWaypointString.c_str());
-//}
-
-
 //if this path to the current neighbor is shorter than the old path,
 //update the current neighbor's weight and set the neighbor's parent
 //to the current visited waypoint
@@ -181,6 +165,13 @@ void AIPathfinding::UnvisitedNodes::clear()
 
 while (!visitedNodes::Nodes()) 
 {
-	
+	if (visitedNode = 1);
+	{
+		int VisitedNode, UnvisitedNode, PathNode;
+		
+		VisitedNode = 1;
+		UnvisitedNode = 0;
+		PathNode = -1;
+	}
 }
 	

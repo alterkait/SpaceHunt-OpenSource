@@ -1,8 +1,5 @@
 #include "mastrix.hpp"
 
-AIPathfinding::AIPathfinding()
-{}
-
 AIPathfinding::~AIPathfinding()
 {}
 

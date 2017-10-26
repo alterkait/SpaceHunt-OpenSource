@@ -178,3 +178,9 @@ void AIPathfinding::UnvisitedNodes::clear()
 	while (!unvisitedPQ.empty())
 		unvisitedPQ.pop();
 }
+
+while (!visitedNodes::Nodes()) 
+{
+	
+}
+	

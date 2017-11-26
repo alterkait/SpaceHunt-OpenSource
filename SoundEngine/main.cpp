@@ -176,3 +176,16 @@ CLIENT_CONSOLE_COMMAND(set_speaker_mode)
 }
 
 
+void Mute();
+
+float const char VDb;
+VDb = 0;
+Mute()
+{
+	 SoundEngine::MutedVolume(for i < 0; i++)
+	 {
+		 
+	 }
+}
+
+

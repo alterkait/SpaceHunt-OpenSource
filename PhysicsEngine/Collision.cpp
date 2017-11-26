@@ -50,7 +50,10 @@ void CircleToPolygon (Manifold *m, Body *a, Body *b)
      
 }
   
-void PolygonToCircle
+void PolygonToCircle (Manifold *m, Body *a, Body *b)
+{
+    
+}
 
 
 

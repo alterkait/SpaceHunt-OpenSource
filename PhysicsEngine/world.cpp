@@ -27,7 +27,7 @@ name(name),
 com_x_m(com_x_m), com_y_m(com_y_m), com_z_m(com_z_m),
 debugging(debugging)
 {
-    string message = "Vechicle " + name + " was created.";
+    string message = "Vehicle " + name + " was created.";
     debugging_message(message);
 }
 
@@ -42,7 +42,7 @@ std::string Vehicle::getName(){
     return name;
 }
 
-// Settor methods
+// Setter methods
 void enable_debugging(){
     debugging = true;
 }

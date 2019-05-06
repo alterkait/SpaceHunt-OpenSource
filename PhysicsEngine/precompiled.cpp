@@ -1,2 +1,2 @@
-#pragma message("Currently compiling the Precopiled Header File. . .")
+#pragma message("Currently compiling the Precompiled Header File. . .")
 #include "Precompiled.h"
